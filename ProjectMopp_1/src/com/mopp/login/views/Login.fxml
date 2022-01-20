@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.effect.DropShadow?>
+
+<AnchorPane fx:id="loginPane" prefHeight="750.0"
+	prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.login.controllers.LoginController" styleClass="mint-bg"
+	stylesheets="@../css/Stylesheet.css">
+	<children>
+		<Label layoutX="340" layoutY="81.0" text="MOPP"
+			textFill="#1a1a1b">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<ImageView fitHeight="70.0" fitWidth="70.0" layoutX="354.0"
+			layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../util/moppLogo.png" />
+			</image>
+		</ImageView>
+		<TextField fx:id="txtUserName" layoutX="239.0" layoutY="280" prefHeight="35.0"
+			prefWidth="300.0" promptText="Enter ID" styleClass="text-field">
+			<font>
+				<Font name="Arial" size="14.0" />
+			</font>
+			<effect>
+				<DropShadow blurType="ONE_PASS_BOX" color="#c6c0c0"
+					height="14.83" radius="8.4575" />
+			</effect>
+		</TextField>
+		<PasswordField fx:id="txtPassword" layoutX="239.0" layoutY="360" prefHeight="35.0" prefWidth="300.0" promptText="Enter Password">
+			<font>
+				<Font name="Arial" size="14.0" />
+			</font>
+			<effect>
+				<DropShadow blurType="ONE_PASS_BOX" color="#c6c0c0"
+					height="14.83" radius="8.4575" />
+			</effect>
+		</PasswordField>
+		<Label fx:id="lblStatus" layoutX="288.0" layoutY="398.0"
+			prefHeight="21.0" prefWidth="274.0" text="" textFill="RED">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		
+		<Hyperlink fx:id="login" layoutX="255" layoutY="443.0"
+			onAction="#login" text="Login" textFill="#1b1a1a">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Hyperlink>
+		<Hyperlink fx:id="ForgotID" layoutX="345.0" layoutY="443.0"
+			onAction="#forgotid" text="Forgot ID" textFill="#1b1a1a">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Hyperlink>
+		<Hyperlink fx:id="ForgotPW" layoutX="445.0" layoutY="443.0"
+			onAction="#forgotpw" text="Forgot PW" textFill="#1b1a1a">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Hyperlink>
+		<Hyperlink fx:id="signUP" layoutX="355.0" layoutY="523.0"
+			onAction="#signup" text="Sign up" textFill="#1b1a1a">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Hyperlink>
+	</children>
+</AnchorPane>

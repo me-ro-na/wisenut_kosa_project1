@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="parentContainer"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.prescription.history.controllers.WarnController">
+	<children>
+		<AnchorPane id="AnchorPane" fx:id="container"
+			prefHeight="750" prefWidth="800" styleClass="white-bg"
+			stylesheets="@../css/Stylesheet.css">
+			<children>
+
+				<HBox layoutX="60" layoutY="60">
+					<Label fx:id="title" text="" textAlignment="CENTER"
+						textFill="BLACK">
+						<font>
+							<Font name="Malgun Gothic Bold" size="36.0" />
+						</font>
+					</Label>
+				</HBox>
+				<Label layoutX="70" layoutY="325.0" text="💊  처방 내용"
+					textAlignment="CENTER" textFill="BLACK">
+					<font>
+						<Font name="Malgun Gothic Bold" size="25.0" />
+					</font>
+				</Label>
+				<Label fx:id="dayTime" layoutX="70" layoutY="430.0"
+					text="✔  복용 횟수: 3일 3회" textAlignment="CENTER" textFill="BLACK">
+					<font>
+						<Font name="Malgun Gothic Bold" size="20.0" />
+					</font>
+				</Label>
+				<HBox layoutX="70" layoutY="380.0">
+					<Label fx:id="symptoms" textAlignment="CENTER" text="✔  "
+						textFill="BLACK">
+						<font>
+							<Font name="Malgun Gothic Bold" size="20.0" />
+						</font>
+					</Label>
+				</HBox>
+				<HBox layoutX="70" layoutY="480.0">
+					<Label fx:id="isTaking" text="✔  " textAlignment="CENTER"
+						textFill="BLACK">
+						<font>
+							<Font name="Malgun Gothic Bold" size="20.0" />
+						</font>
+					</Label>
+				</HBox>
+
+				<HBox layoutX="320" layoutY="380.0">
+					<Label fx:id="warn1"  text="✔  " textAlignment="CENTER"
+						textFill="BLACK">
+						<font>
+							<Font name="Malgun Gothic Bold" size="20.0" />
+						</font>
+					</Label>
+				</HBox>
+
+				<HBox layoutX="320" layoutY="430.0">
+					<Label fx:id="warn2" text="✔  " textAlignment="CENTER"
+						textFill="BLACK">
+						<font>
+							<Font name="Malgun Gothic Bold" size="20.0" />
+						</font>
+					</Label>
+				</HBox>
+				<HBox layoutX="320" layoutY="480.0">
+					<Label fx:id="warn3" text="✔  " textAlignment="CENTER"
+						textFill="BLACK">
+						<font>
+							<Font name="Malgun Gothic Bold" size="20.0" />
+						</font>
+					</Label>
+				</HBox>
+
+
+				<HBox fx:id="backButton" layoutX="330.0" layoutY="550.0">
+					<Hyperlink
+						onMouseClicked="#back_prescription_history_form" text="Previous"
+						textAlignment="CENTER" textFill="#1b1a1a">
+						<font>
+							<Font name="Malgun Gothic Bold" size="18.0" />
+						</font>
+					</Hyperlink>
+				</HBox>
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>

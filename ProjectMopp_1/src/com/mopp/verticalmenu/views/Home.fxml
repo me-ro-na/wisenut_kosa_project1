@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homePane" prefHeight="750.0"
+	prefWidth="800.0" stylesheets="@../resources/styles/Stylesheet.css"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.login.controllers.MainController">
+	<children>
+		<Pane prefHeight="140.0" prefWidth="800.0">
+			<Label layoutX="320" layoutY="60" text="MOPP"
+				textFill="#1a1a1b">
+				<font>
+					<Font size="36.0" />
+				</font>
+			</Label>
+		</Pane>
+
+		<Hyperlink fx:id="RX11" alignment="CENTER" layoutX="236.0"
+			layoutY="568.0" onAction="#over_to_supplement" text="전문가에게 추천받는 영양제"
+			textFill="#204545">
+			<font>
+				<Font name="Malgun Gothic Bold" size="18.0" />
+			</font>
+		</Hyperlink>
+		<TableView fx:id="rxList" layoutX="98.0" layoutY="189.0"
+			prefHeight="267.0" prefWidth="515.0">
+			<columns>
+				<TableColumn fx:id="rxNo" prefWidth="43.0"
+					resizable="false" style="-fx-alignment: CENTER;" text="NO" />
+				<TableColumn fx:id="rxDate" prefWidth="104.0"
+					resizable="false" style="-fx-alignment: CENTER;" text="DATE" />
+				<TableColumn fx:id="rxMedicineName" minWidth="1.0"
+					prefWidth="175.0" resizable="false" text="MEDICINE NAME" />
+				<TableColumn fx:id="rxSymptoms" prefWidth="192.0"
+					resizable="false" text="SYMPTOMS" />
+			</columns>
+		</TableView>
+	</children>
+</AnchorPane>

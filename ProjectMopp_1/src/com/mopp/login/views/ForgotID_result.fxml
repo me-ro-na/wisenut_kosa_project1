@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginResultPane" prefHeight="750.0"
+	prefWidth="800.0" styleClass="mint-bg"
+	stylesheets="@../css/Stylesheet.css"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.login.controllers.ForgotIDResultController">
+	<children>
+		<Label layoutX="340" layoutY="81.0" text="MOPP"
+			textFill="#1a1a1b">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<Text layoutX="113.0" layoutY="277.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="This is Your ID!">
+			<font>
+				<Font name="Hancom Gothic Bold" size="25.0" />
+			</font>
+		</Text>
+		<Text layoutX="250" layoutY="316.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text=" Your ID is "
+			wrappingWidth="112.00000047683716">
+			<font>
+				<Font name="Hancom Gothic Regular" size="18.0" />
+			</font>
+		</Text>
+		<Hyperlink fx:id="Login" alignment="TOP_CENTER"
+			contentDisplay="CENTER" layoutX="370.0" layoutY="531.0"
+			onAction="#goLoginPage" prefHeight="29.0" prefWidth="65.0"
+			text="Login" textFill="#2874ee">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Hyperlink>
+		<Label fx:id="yourId" layoutX="370.0" layoutY="315.0"
+			prefHeight="23.0" prefWidth="112.0" underline="true">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

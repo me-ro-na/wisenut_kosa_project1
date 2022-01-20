@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.effect.DropShadow?>
+
+<AnchorPane fx:id="signUpPane" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="750.0" prefWidth="800.0"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.login.controllers.SignUPController"
+	styleClass="mint-bg" stylesheets="@../css/Stylesheet.css">
+	<children>
+		<Label layoutX="340" layoutY="81.0" text="MOPP"
+			textFill="#1a1a1b">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<TextField fx:id="txtMemberUserId" layoutX="300.0"
+			layoutY="195.0" prefHeight="6.0" prefWidth="350.0" promptText="ID">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<Label layoutX="170.0" layoutY="200.0" text="ID">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="170.0" layoutY="240.0" text="Password">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<PasswordField fx:id="txtMemberPwd" layoutX="300.0"
+			layoutY="235.0" prefHeight="16.0" prefWidth="350.0"
+			promptText="Password">
+			<font>
+				<Font name="Arial" size="14.0" />
+			</font>
+			<effect>
+				<DropShadow blurType="ONE_PASS_BOX" color="#c6c0c0"
+					height="14.83" radius="8.4575" />
+			</effect>
+		</PasswordField>
+		<TextField fx:id="txtMemberName" layoutX="300.0"
+			layoutY="275.0" prefHeight="6.0" prefWidth="350.0" promptText="Name">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<Label layoutX="170.0" layoutY="280.0" text="Name">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<TextField fx:id="txtMemberTel" layoutX="300.0"
+			layoutY="315.0" prefHeight="6.0" prefWidth="350.0"
+			promptText="Mobile">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<Label layoutX="170.0" layoutY="320.0" text="Mobile">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<TextField fx:id="txtMemberEmail1" layoutX="300.0"
+			layoutY="355.0" prefHeight="28.0" prefWidth="150.0"
+			promptText="E-mail">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<Label fx:id="emailLabel" layoutX="170.0" layoutY="360.0"
+			text="E-Mail">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<MenuButton fx:id="buttonMemberEmail2" layoutX="499.0"
+			layoutY="355.0" mnemonicParsing="false" prefHeight="23.0"
+			prefWidth="150.0" text="선택">
+			<items>
+				<MenuItem mnemonicParsing="false" onAction="#setEmail2"
+					text="naver.com" />
+				<MenuItem mnemonicParsing="false" onAction="#setEmail2"
+					text="google.com" />
+				<MenuItem mnemonicParsing="false" onAction="#setEmail2"
+					text="hanmail.net" />
+			</items>
+			<font>
+				<Font size="14.0" />
+			</font>
+		</MenuButton>
+		<RadioButton fx:id="male" layoutX="300.0" layoutY="401.0"
+			mnemonicParsing="false" selected="true" text="Male">
+			<toggleGroup>
+				<ToggleGroup  fx:id="genderType"/>
+			</toggleGroup>
+		</RadioButton>
+		<RadioButton layoutX="400.0" layoutY="401.0"
+			mnemonicParsing="false" text="Female" toggleGroup="$genderType" />
+		<Label layoutX="170.0" layoutY="400.0" text="Gender">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="465.0" layoutY="360.0" text="\@">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+
+		<Label layoutX="170.0" layoutY="440.0" text="Birth">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<DatePicker fx:id="birthDay" layoutX="300.0"
+			layoutY="435.0" prefHeight="35.0" prefWidth="350"
+			promptText="Date Of Bith" style="-fx-background-color: transparent;" />
+
+		<TextField layoutX="300.0" layoutY="555.0" prefHeight="6.0"
+			prefWidth="350.0" promptText="Weight">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<Label layoutX="170.0" layoutY="560.0" text="Weight">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<TextField layoutX="300.0" layoutY="595.0" prefHeight="6.0"
+			prefWidth="350.0" promptText="Height">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<Label layoutX="170.0" layoutY="600.0" text="Height">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Line layoutX="650.0" layoutY="508.0" startX="-180.0" />
+		<Label alignment="CENTER" layoutX="351.0" layoutY="500.0"
+			prefHeight="18.0" prefWidth="119.0" text="Optional">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Label>
+		<Hyperlink layoutX="300.0" layoutY="640" onAction="#back"
+			prefHeight="29.0" text="Previous" textFill="#1b1a1a">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Hyperlink>
+		<Hyperlink fx:id="submit" alignment="CENTER" layoutX="400.0"
+			layoutY="640" onAction="#next" prefHeight="29.0" textFill="#1b1a1a"
+			text="Submit">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Hyperlink>
+	</children>
+</AnchorPane>

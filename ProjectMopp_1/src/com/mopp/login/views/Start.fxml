@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="startPane" prefHeight="750.0"
+	prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.login.controllers.StartController"
+	styleClass="mint-bg" stylesheets="@../css/Stylesheet.css">
+	<children>
+		<ImageView fitHeight="150.0" fitWidth="200.0"
+			layoutX="325.0" layoutY="120.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@../../../../../util/moppLogo.png" />
+			</image>
+		</ImageView>
+		<Button layoutX="335.0" layoutY="398.0" mnemonicParsing="false"
+			onAction="#getStartedButton" prefHeight="35.0" prefWidth="130.0" styleClass="get-started-btn"
+			text="Get Started">
+			<font>
+				<Font name="Arial Bold" size="12.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

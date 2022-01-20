@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="426.0" prefWidth="400.0"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<padding>
+		<Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+	<center>
+		<GridPane hgap="10.0" vgap="10.0">
+			<children>
+				<Label alignment="CENTER" prefHeight="15.0" prefWidth="152.0"
+					text="키" />
+				<Label alignment="CENTER" prefHeight="15.0" prefWidth="151.0"
+					text="체중" GridPane.rowIndex="1" />
+				<Label alignment="CENTER" prefHeight="15.0" prefWidth="147.0"
+					text="음주" GridPane.rowIndex="2" />
+				<Label alignment="CENTER" prefHeight="15.0" prefWidth="150.0"
+					text="수면" GridPane.rowIndex="3" />
+				<Label alignment="CENTER" prefHeight="15.0" prefWidth="152.0"
+					text="고민사항" GridPane.rowIndex="4" />
+				<Label prefHeight="45.0" prefWidth="152.0"
+					text="1.혈관   2.소화/장   3.피부" GridPane.rowIndex="5" />
+				<Label prefHeight="45.0" prefWidth="143.0"
+					text="4.눈     5.뇌      6.피로" GridPane.rowIndex="6" />
+				<Label prefHeight="45.0" prefWidth="152.0"
+					text="7.면역  8.뼈/관절  9.모발 " GridPane.rowIndex="7" />
+				<TextField id="txtHeight" prefWidth="100" promptText="Cm"
+					GridPane.columnIndex="1" />
+				<TextField id="txtWeight" prefWidth="100" promptText="kg"
+					GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<TextField id="txtDrink" prefWidth="100"
+					promptText="Times a week" GridPane.columnIndex="1"
+					GridPane.rowIndex="2" />
+				<TextField id="txtSleep" prefWidth="100"
+					promptText="Hours a day" GridPane.columnIndex="1"
+					GridPane.rowIndex="3" />
+				<TextField id="txtTrouble" promptText="Write numer"
+					GridPane.columnIndex="1" GridPane.rowIndex="4" />
+			</children>
+			<columnConstraints>
+				<ColumnConstraints />
+				<ColumnConstraints />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+				<RowConstraints />
+			</rowConstraints>
+		</GridPane>
+	</center>
+	<bottom>
+		<HBox alignment="CENTER" spacing="20.0">
+			<BorderPane.margin>
+				<Insets bottom="10" top="20.0" />
+			</BorderPane.margin>
+			<children>
+				<Button id="btnFormAdd" text="저장" />
+				<Button id="btnFormCancel" text="취소" />
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>

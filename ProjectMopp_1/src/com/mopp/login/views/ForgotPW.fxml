@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="forgotPwPane" prefHeight="750.0"
+	prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.login.controllers.ForgotPWController"
+	styleClass="mint-bg" stylesheets="@../css/Stylesheet.css">
+	<children>
+		<Label layoutX="340" layoutY="81.0" text="MOPP"
+			textFill="#1a1a1b">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<Text layoutX="109.0" layoutY="249.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Forgot Your Password?"
+			wrappingWidth="281.36328125">
+			<font>
+				<Font name="Hancom Gothic Bold" size="25.0" />
+			</font>
+		</Text>
+		<Text layoutX="146.0" layoutY="284.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Insert your ID and NAME when you signed up!"
+			wrappingWidth="508.36328125">
+			<font>
+				<Font name="Hancom Gothic Regular" size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="253.0" layoutY="446.0" text="Name">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="273.0" layoutY="375.0" prefHeight="29.0"
+			prefWidth="31.0" text="ID">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="id" layoutX="350.0" layoutY="375.0"
+			prefHeight="6.0" prefWidth="168.0" promptText="ID">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<TextField fx:id="name" layoutX="350.0" layoutY="443.0"
+			prefHeight="6.0" prefWidth="168.0" promptText="Name">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextField>
+		<Hyperlink fx:id="previous" layoutX="300.0" layoutY="542.0"
+			onAction="#back" prefHeight="29.0" text="Previous" textFill="#1b1a1a">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Hyperlink>
+		<Hyperlink fx:id="Next" alignment="CENTER" layoutX="400.0" layoutY="542.0"
+			onAction="#next" prefHeight="29.0" prefWidth="57.0"
+			textFill="#1b1a1a" text="Next">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Hyperlink>
+	</children>
+</AnchorPane>

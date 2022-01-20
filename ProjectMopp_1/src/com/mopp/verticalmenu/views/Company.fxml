@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="710.0"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+
+		<Label fx:id="label" alignment="CENTER" contentDisplay="TOP"
+			layoutX="-86.0" layoutY="69.0" prefHeight="112.0" prefWidth="854.0"
+			text="MOPP IS?" textFill="#4072ab">
+			<font>
+				<Font name="Optima Bold" size="46.0" />
+			</font>
+		</Label>
+		<Circle fill="#9db7d0" layoutX="494.0" layoutY="517.0"
+			radius="141.0" stroke="WHITE" strokeType="INSIDE" />
+		<ImageView fitHeight="68.0" fitWidth="230.0" layoutX="442.0"
+			layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../resources/images/wisenutelogo.png" />
+			</image>
+		</ImageView>
+		<Circle fill="#9db7d0" layoutX="189.0" layoutY="528.0"
+			radius="141.0" stroke="WHITE" strokeType="INSIDE" />
+		<Circle fill="#9db7d0" layoutX="341.0" layoutY="357.0"
+			radius="141.0" stroke="WHITE" strokeType="INSIDE" />
+		<Label contentDisplay="CENTER" layoutX="123.0" layoutY="488.0"
+			prefHeight="79.0" prefWidth="154.0" text="MY OWN"
+			textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Optima Bold" size="34.0" />
+			</font>
+		</Label>
+		<Label contentDisplay="CENTER" layoutX="256.0" layoutY="318.0"
+			prefHeight="79.0" text="PERSONAL" textAlignment="CENTER"
+			textFill="WHITE">
+			<font>
+				<Font name="Optima Bold" size="34.0" />
+			</font>
+		</Label>
+		<Label contentDisplay="CENTER" layoutX="372.0" layoutY="477.0"
+			prefHeight="79.0" prefWidth="220.0" text="PHARMACIST"
+			textAlignment="RIGHT" textFill="WHITE">
+			<font>
+				<Font name="Optima Bold" size="33.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="forgotIdPane" prefHeight="750.0"
+	prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.mopp.login.controllers.ForgotIDController"
+	styleClass="mint-bg" stylesheets="@../css/Stylesheet.css">
+	<children>
+		<Label layoutX="340" layoutY="81.0" text="MOPP"
+			textFill="#1a1a1b">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<Text layoutX="109.0" layoutY="249.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Forgot Your ID?" wrappingWidth="281.36328125">
+			<font>
+				<Font name="Hancom Gothic Bold" size="25.0" />
+			</font>
+		</Text>
+		<Text layoutX="146.0" layoutY="284.0" strokeType="OUTSIDE"
+			strokeWidth="0.0"
+			text="Insert your NAME and E-MAIL when you signed up!"
+			wrappingWidth="508.36328125">
+			<font>
+				<Font name="Hancom Gothic Regular" size="20.0" />
+			</font>
+		</Text>
+		<Label layoutX="257.0" layoutY="387.0" text="Name">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="name" layoutX="350.0" layoutY="384.0"
+			prefHeight="6.0" prefWidth="168.0" promptText="Name">
+			<font>
+				<Font name="Arial" size="14.0" />
+			</font>
+			<effect>
+				<DropShadow blurType="ONE_PASS_BOX" color="#c6c0c0"
+					height="14.83" radius="8.4575" />
+			</effect>
+		</TextField>
+		<HBox fx:id="nameHB" layoutX="530" layoutY="390.0"
+			visible="false">
+			<Label text="입력되지 않았습니다." textFill="RED">
+				<font>
+					<Font name="Malgun Gothic Regular" size="14.0" />
+				</font>
+			</Label>
+		</HBox>
+		<Label layoutX="254.0" layoutY="445.0" text="E-Mail">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<TextField fx:id="email" layoutX="350.0" layoutY="442.0"
+			prefHeight="6.0" prefWidth="168.0" promptText="E-mail">
+			<font>
+				<Font name="Arial" size="14.0" />
+			</font>
+			<effect>
+				<DropShadow blurType="ONE_PASS_BOX" color="#c6c0c0"
+					height="14.83" radius="8.4575" />
+			</effect>
+		</TextField>
+		<HBox fx:id="emailHB" layoutX="530" layoutY="450.0"
+			visible="false">
+			<Label text="입력되지 않았습니다." textFill="RED">
+				<font>
+					<Font name="Malgun Gothic Regular" size="14.0" />
+				</font>
+			</Label>
+		</HBox>
+		<Hyperlink fx:id="previous" layoutX="300.0" layoutY="542.0"
+			onAction="#back" prefHeight="29.0" text="Previous" textFill="#1b1a1a">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Hyperlink>
+		<Hyperlink fx:id="Next" layoutX="400.0" layoutY="542.0"
+			onAction="#next" prefHeight="29.0" prefWidth="57.0" text="Next"
+			textFill="#1b1a1a">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Hyperlink>
+	</children>
+</AnchorPane>
